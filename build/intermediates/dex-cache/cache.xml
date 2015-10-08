@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Cui Yinqiu\AndroidStudioProjects\WorkoutBuddies\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\Cui Yinqiu\AndroidStudioProjects\WorkoutBuddies\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-6859e6b1a244d164f2a830c7e45f458f7a3ce793.jar" />
+    </item>
+    <item
+        jar="C:\Users\Cui Yinqiu\AndroidStudioProjects\WorkoutBuddies\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\Cui Yinqiu\AndroidStudioProjects\WorkoutBuddies\app\build\intermediates\pre-dexed\debug\classes-54a6a594bb11b905fc9f5d0773d3d002564d78e0.jar" />
+    </item>
+    <item
+        jar="C:\Users\Cui Yinqiu\AndroidStudioProjects\WorkoutBuddies\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="C:\Users\Cui Yinqiu\AndroidStudioProjects\WorkoutBuddies\app\build\intermediates\pre-dexed\debug\classes-6bcb802dead9abf99c53fdc55024ed3759a04700.jar" />
+    </item>
+    <item
+        jar="C:\Users\Cui Yinqiu\AndroidStudioProjects\WorkoutBuddies\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\Cui Yinqiu\AndroidStudioProjects\WorkoutBuddies\app\build\intermediates\pre-dexed\debug\classes-002df4670011fbd1ef6632d0a861a71db0854680.jar" />
+    </item>
+    <item
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\Cui Yinqiu\AndroidStudioProjects\WorkoutBuddies\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-6caa1fe4da30cf2cc1676a54cb9890359b7ae5e4.jar" />
+    </item>
+
+</items>
