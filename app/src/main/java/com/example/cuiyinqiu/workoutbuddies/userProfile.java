@@ -198,19 +198,21 @@ public class userProfile extends AppCompatActivity implements AdapterView.OnItem
                     Dog.put("Email",email);
                     Dog.put("MobileNumber",mobile);
                     Dog.put("Age",ageSelected);
-                    Dog.put("BodyType","Thin");
-                    Dog.put("LifeStyle", "Health");
+                    Dog.put("FitnessLevel",fitnessLevelSelected);
+                    Dog.put("GymFrequency", gymFrequencySelected);
+                    Dog.put("FitnessPlan",fitnessPlanSelected);
+                    Dog.put("Availability",availabilitySelected);
                     Dog.saveInBackground();
-                    ParseObject UserInformation=new ParseObject("UserInformation");
-                    UserInformation.put("Gender",genderSelected );
-                    UserInformation.put("First Name",firstname );
-                    UserInformation.put("Last Name", lastname);
-                    UserInformation.put("Email",email);
-                    UserInformation.put("Mobile Number",mobile );
-                    UserInformation.put("Age",ageSelected);
-                    UserInformation.put("Body_Type","");
-                    UserInformation.put("LifeStyle", "");
-                    UserInformation.saveInBackground();
+//                    ParseObject UserInformation=new ParseObject("UserInformation");
+//                    UserInformation.put("Gender",genderSelected );
+//                    UserInformation.put("First Name",firstname );
+//                    UserInformation.put("Last Name", lastname);
+//                    UserInformation.put("Email",email);
+//                    UserInformation.put("Mobile Number",mobile );
+//                    UserInformation.put("Age",ageSelected);
+//                    UserInformation.put("Body_Type","");
+//                    UserInformation.put("LifeStyle", "");
+//                    UserInformation.saveInBackground();
                 }
             }
         });

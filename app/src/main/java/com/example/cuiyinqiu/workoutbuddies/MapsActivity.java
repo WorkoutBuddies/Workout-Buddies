@@ -1,14 +1,18 @@
 package com.example.cuiyinqiu.workoutbuddies;
 
+// credit to http://javapapers.com/android/find-places-nearby-in-google-maps-using-google-places-apiandroid-app/
+
 import android.Manifest;
 import android.annotation.TargetApi;
 import android.content.Context;
+import android.content.Intent;
 import android.content.IntentSender;
 import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Build;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -33,7 +37,11 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
+    private static final String GOOGLE_API_KEY = "AIzaSyB7ctA4Tb1O7m21L5yradWJYKzF1aMRV28" ;
     private GoogleMap mMap;
+//    double latitude = 0;
+//    double longitude = 0;
+    private int PROXIMITY_RADIUS = 5000;
     private LocationManager locationManager;
     private LocationListener locationListener;
 
@@ -116,14 +124,29 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void handleNewLocation(Location location) {
  //       Log.d(TAG, location.toString());
+        mMap.clear();
         double currentLatitude = location.getLatitude();
         double currentLongitude = location.getLongitude();
         LatLng latLng = new LatLng(currentLatitude, currentLongitude);
 
-        MarkerOptions options = new MarkerOptions()
-                .position(latLng)
-                .title("I am here!");
-        mMap.addMarker(options);
+        String type = "gym";
+        StringBuilder googlePlacesUrl = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
+        googlePlacesUrl.append("location=" + currentLatitude + "," + currentLongitude);
+        googlePlacesUrl.append("&radius=" + PROXIMITY_RADIUS);
+        googlePlacesUrl.append("&types=" + type);
+        googlePlacesUrl.append("&sensor=true");
+        googlePlacesUrl.append("&key=" + GOOGLE_API_KEY);
+
+        GooglePlacesReadTask googlePlacesReadTask = new GooglePlacesReadTask();
+        Object[] toPass = new Object[2];
+        toPass[0] = mMap;
+        toPass[1] = googlePlacesUrl.toString();
+        googlePlacesReadTask.execute(toPass);
+
+//        MarkerOptions options = new MarkerOptions()
+//                .position(latLng)
+//                .title("I am here!");
+//        mMap.addMarker(options);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12.0f));
     }
 
@@ -143,4 +166,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
 
+
 }
+
+
+
