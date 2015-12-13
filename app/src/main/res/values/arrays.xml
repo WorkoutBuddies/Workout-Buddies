@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genderOptions">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Neutral</item>
+    </string-array>
+
+    <string-array name="genderValues">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Neutral</item>
+    </string-array>
+
+    <string-array name="ageOptions">
+        <item>18-25</item>
+        <item>26-40</item>
+        <item>40-65</item>
+        <item>65+</item>
+    </string-array>
+
+    <string-array name="ageValues">
+        <item>18-25</item>
+        <item>26-40</item>
+        <item>40-65</item>
+        <item>65+</item>
+    </string-array>
+
+    <string-array name="fitnessValues">
+        <item>Weight Loss</item>
+        <item>Muscle Gain</item>
+        <item>Maintenance</item>
+    </string-array>
+
+    <string-array name="fitnessOptions">
+        <item>Weight Loss</item>
+        <item>Muscle Gain</item>
+        <item>Maintenance</item>
+    </string-array>
+
+    <string-array name="levelValues">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Expert</item>
+    </string-array>
+
+    <string-array name="levelOptions">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Expert</item>
+    </string-array>
+
+    <string-array name="freqValues">
+        <item>1-2 Days Per Week</item>
+        <item>3-4 Days Per Week</item>
+        <item>5-7 Days Per Week</item>
+    </string-array>
+
+    <string-array name="freqOptions">
+        <item>1-2 Days Per Week</item>
+        <item>3-4 Days Per Week</item>
+        <item>5-7 Days Per Week</item>
+    </string-array>
+
+    <string-array name="availValues">
+        <item>5am - 9am</item>
+        <item>9am - 12pm</item>
+        <item>12pm - 4pm</item>
+        <item>4pm - 7pm</item>
+        <item>7pm - 12am</item>
+    </string-array>
+
+    <string-array name="availOptions">
+        <item>5am - 9am</item>
+        <item>9am - 12pm</item>
+        <item>12pm - 4pm</item>
+        <item>4pm - 7pm</item>
+        <item>7pm - 12am</item>
+    </string-array>
+
+</resources>

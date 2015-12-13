@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:summary="Filters for Workout Buddies"
+        android:title="Filters" >
+
+        <ListPreference
+            android:entries="@array/genderOptions"
+            android:entryValues="@array/genderValues"
+            android:key="genderpref"
+            android:title="Gender" />
+
+        <ListPreference
+            android:entries="@array/ageOptions"
+            android:entryValues="@array/ageValues"
+            android:key="agepref"
+            android:title="Age" />
+
+        <ListPreference
+            android:entries="@array/fitnessOptions"
+            android:entryValues="@array/fitnessValues"
+            android:key="fitnesspref"
+            android:summary="What are your goals?"
+            android:title="Fitness Plan" />
+
+        <ListPreference
+            android:entries="@array/levelOptions"
+            android:entryValues="@array/levelValues"
+            android:key="levelpref"
+            android:summary="How much experience do you have?"
+            android:title="Fitness Level" />
+
+        <ListPreference
+            android:entries="@array/freqOptions"
+            android:entryValues="@array/freqValues"
+            android:key="freqpref"
+            android:summary="How often would you like to go to the gym?"
+            android:title="Gym Frequency" />
+
+        <ListPreference
+            android:entries="@array/availOptions"
+            android:entryValues="@array/availValues"
+            android:key="availpref"
+            android:summary="When can you workout?"
+            android:title="Availability" />
+    </PreferenceCategory>
+</PreferenceScreen>
